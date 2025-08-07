@@ -24,7 +24,6 @@ export default function Home() {
         }
         fetchData();
     },[]);
-
   return (
       <main className={"min-h-screen bg-black text-white p8"}>
         <h1 className="text-3xl font-bold mb-6">Star Wars Films</h1>
@@ -36,6 +35,7 @@ export default function Home() {
               ))}
           </ul>
       </main>
+
 
   );
 }
