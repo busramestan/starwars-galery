@@ -5,6 +5,8 @@ import FilmCard from "@/app/components/FilmCard";
 type Film = {
     id: string
     title: string
+    director: string
+    episode_id: number
     opening_crawl: string
 }
 
@@ -28,7 +30,8 @@ export default function FilmSwiper ({films}: FilmSwiperProps){
             >
             {films.map((film) => (
                 <SwiperSlide key={film.id}>
-                    <FilmCard title={film.title} opening_crawl={film.opening_crawl}/>
+                    <FilmCard title={film.title} director={film.director} episode_id={film.episode_id}
+                              opening_crawl={film.opening_crawl}/>
                 </SwiperSlide>
             ))}
         </Swiper>

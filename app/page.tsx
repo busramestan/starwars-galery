@@ -1,15 +1,8 @@
 'use client'
-import FilmCard from "@/app/components/FilmCard";
 import React, {useEffect, useState} from "react";
 import {getFilms} from "@/lib/api";
 import FilmSwiper from "@/app/components/FilmSwiper";
 
-/*type Film = {
-    title: string;
-    episode_id: number;
-    opening_crawl: string;
-}
- */
 export default function Home() {
     const [films, setFilms] = useState([]);
 
@@ -30,7 +23,5 @@ export default function Home() {
         <h1 className="text-3xl font-bold mb-6">Star Wars Films</h1>
           <FilmSwiper films={films} />
       </main>
-
-
   );
 }
